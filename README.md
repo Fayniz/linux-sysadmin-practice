@@ -50,3 +50,10 @@ This repo tracks my learning and practical exercises to build Linux system admin
 * Enabled firewall and verify status
 * Understand the importance of security
 * Saved terminal history in 'firewall-setup.txt'
+
+### IP addressing and Routing
+
+* Learned interface, local IP, gateway
+* Routing checked with `ip r`
+* Understood default route and local subnet
+* Saved terminal output in 'ip-routing.txt'
