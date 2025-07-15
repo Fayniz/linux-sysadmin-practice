@@ -1,0 +1,5 @@
+  375  nano cleanup.sh
+  376  chmod +x cleanup cleanup.sh
+  377  chmod +x cleanup.sh
+  378  ./cleanup.sh
+  381  history | tail -n 10 > create-script-file.txt

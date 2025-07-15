@@ -20,4 +20,9 @@ This repo tracks my learning and practical exercises to build Linux system admin
 - Restricted file access to owner only with 'chmod 600'
 - Saved command history to 'Permissions.txt'
 
+## Day 4 (17 July 2025)
+
+- Create script file to delete temporary files
+- Terminal output messages of deletion
+- Saved command history to create-script-file.txt
 
