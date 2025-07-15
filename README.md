@@ -8,3 +8,8 @@ This repo tracks my learning and practical exercises to build Linux system admin
 - Saved terminal commands to 'adduser-commands.txt'
 - Pushed to Github
 
+## Day 2 (15 July 2025)
+- Manage service using 'systemctl'
+- Checked, stopped, started, disabled, enabled, cron service
+- Saved terminal command history to 'service-management.txt'
+
