@@ -1,92 +1,52 @@
 This repo tracks my learning and practical exercises to build Linux system administration skills. The goals are to practice user management, services, security hardening, networking and scripting.
 
 ### User Management
-- Created a new Linux user 'testuser' using:
-  ```bash
-  sudo adduser testuser
-  sudo usermod -aG sudo testuser
-
+* Created new users, assigned groups and sudo rights
+* Managed file ownership and permissions with chown and chmod
 * Saved terminal history to 'adduser-commands.txt'
 
 ### Service Management
 
 * Managed services using `systemctl`:
-
-  ```bash
-  systemctl status cron
-  sudo systemctl stop cron
-  sudo systemctl start cron
-  sudo systemctl disable cron
-  sudo systemctl enable cron
-  ```
+* Used systemctl to start, stop, enable, disable services
+* Explored logs with journalctl
 * Saved terminal history to 'service-management.txt'
 
 ### Permission Management
 
-* Practiced file permission and ownership:
-
-  ```bash
-  touch file.txt
-  sudo chown testuser file.txt
-  chmod 600 file.txt
-  ```
+* Practiced file permission and ownership
+* Created a test file, changed ownership to 'testuser'
+* Restricted file access to owner only with `chmod 600`
 * Saved terminal history to 'Permissions.txt'
 
 ### Scripting and Automation
 
-* Created bash script to delete `.tmp` files from `/tmp`:
-
-  ```bash
-  echo -e '#!/bin/bash\nrm -f /tmp/*.tmp' > cleanup.sh
-  chmod +x cleanup.sh
-  ./cleanup.sh
-  ```
+* Created bash script to delete `.tmp` files from `/tmp`
+* Made the script executable using `chmod +x` 
+* Ran the script succesfully
 * Saved terminal history to 'create-script-file.txt'
 
 ### System Monitoring
 
-* Explored disk and memory usage:
-
-  ```bash
-  df -h
-  du -sh ~
-  free -h
-  ```
+* Explored disk space using `df -h` and directory usage `du -sh`
+* Checked memory status with `free -h` and understood Linux memory usage
+* Learned the difference between RAM and disk storage
 * Saved terminal history in 'disk-memory.txt'
 
 ### SSH
 
-* Generated RSA SSH key pair:
-
-  ```bash
-  ssh-keygen -t rsa -b 4096 -C "fayyadhnizar@gmail.com"
-  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-  ```
-* Disabled root SSH login by editing `/etc/ssh/sshd_config`
-* Tested SSH key login to localhost:
-
-  ```bash
-  ssh root@localhost
-  ```
+* Generated RSA SSH key pair with 4096-bit encryption
+* Added public key to `~/.ssh/authorized_keys` for passwordless SSH login
+* Disabled root login via SSH for better security
+* Tested SSH key login to localhost with no password prompt
+* Tested SSH key login to localhost
 * Saved terminal history in 'ssh-key-setup.txt'
 
 ### Firewall 
 
-* Installed UFW:
-
-  ```bash
-  sudo apt install ufw
-  ```
-* Set default policies and allowed ports:
-
-  ```bash
-  sudo ufw default deny incoming
-  sudo ufw default allow outgoing
-  sudo ufw allow ssh
-  sudo ufw allow 80/tcp
-  sudo ufw allow 443/tcp
-  sudo ufw enable
-  sudo ufw status verbose
-  sudo fail2ban-client status
-  ```
+* Installed and configured ufw for system security
+* Set default policies to deny all incoming and allow all outgoing traffic
+* Allowed necessary ports: SSH(22), HTTP(80), and HTTPS(443)
+* Enabled firewall and verify status
+* Understand the importance of security
 * Saved terminal history in 'firewall-setup.txt'
