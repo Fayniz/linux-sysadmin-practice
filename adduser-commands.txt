@@ -1,10 +1,3 @@
-  251  sudo apt install taskwarrior
-  252  taskwarrior
-  253  task list
-  254  task news
-  255  task list
-  256  task add vim sudoku
-  257  task add EMAN empower
   258  sudo adduser testuser
   259  sudo usermod -aG sudo testuser
   260  history | tail -n 10 > adduser-commands.txt
