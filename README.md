@@ -1,6 +1,6 @@
 This repo tracks my learning and practical exercises to build Linux system administration skills. The goals are to practice user management, services, security hardening, networking and scripting.
 
-### Day 1 (14 July)
+### User Management
 - Created a new Linux user 'testuser' using:
   ```bash
   sudo adduser testuser
@@ -8,7 +8,7 @@ This repo tracks my learning and practical exercises to build Linux system admin
 
 * Saved terminal history to 'adduser-commands.txt'
 
-### Day 2 (15 July)
+### Service Management
 
 * Managed services using `systemctl`:
 
@@ -21,7 +21,7 @@ This repo tracks my learning and practical exercises to build Linux system admin
   ```
 * Saved terminal history to 'service-management.txt'
 
-### Day 3 (16 July)
+### Permission Management
 
 * Practiced file permission and ownership:
 
@@ -32,7 +32,7 @@ This repo tracks my learning and practical exercises to build Linux system admin
   ```
 * Saved terminal history to 'Permissions.txt'
 
-### Day 4 (17 July)
+### Scripting and Automation
 
 * Created bash script to delete `.tmp` files from `/tmp`:
 
@@ -43,7 +43,7 @@ This repo tracks my learning and practical exercises to build Linux system admin
   ```
 * Saved terminal history to 'create-script-file.txt'
 
-### Day 5 (18 July)
+### System Monitoring
 
 * Explored disk and memory usage:
 
@@ -54,7 +54,7 @@ This repo tracks my learning and practical exercises to build Linux system admin
   ```
 * Saved terminal history in 'disk-memory.txt'
 
-### Day 6 (19 July)
+### SSH
 
 * Generated RSA SSH key pair:
 
@@ -70,7 +70,7 @@ This repo tracks my learning and practical exercises to build Linux system admin
   ```
 * Saved terminal history in 'ssh-key-setup.txt'
 
-### Day 7 (20 July)
+### Firewall 
 
 * Installed UFW:
 
