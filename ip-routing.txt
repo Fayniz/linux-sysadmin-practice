@@ -1,0 +1,2 @@
+  354  ip r
+  355  history | tail -n 2 > ip-routing.txt
