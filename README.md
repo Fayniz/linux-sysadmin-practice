@@ -35,4 +35,8 @@ This repo tracks my learning and practical exercises to build Linux system admin
 
 ## Day 6 (19 July)
 
-- 
+- Generated RSA SSH key pair with 4096-bit encryption
+- Added public key to ~/.ssh/authorized_keys for passwordless SSH login
+- Disabled root login via SSH for better security
+- Tested SSH key login to localhost with no password prompt
+- Saved terminal history in 'ssh-key-setup.txt' 

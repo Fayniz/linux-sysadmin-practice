@@ -1,10 +1,4 @@
   405  df -h
-  406  df -sh
-  407  df -sh *
   408  du -sh *
   409  free -h
-  410  cd
-  411  free -h
-  412  free -h top
-  413  top
   414  history | tail -n 10 > disk-memory.txt
