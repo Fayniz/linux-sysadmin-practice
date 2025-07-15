@@ -1,4 +1,3 @@
-````markdown
 This repo tracks my learning and practical exercises to build Linux system administration skills. The goals are to practice user management, services, security hardening, networking and scripting.
 
 ### Day 1 (14 July)
@@ -6,7 +5,6 @@ This repo tracks my learning and practical exercises to build Linux system admin
   ```bash
   sudo adduser testuser
   sudo usermod -aG sudo testuser
-````
 
 * Saved terminal history to 'adduser-commands.txt'
 
@@ -89,11 +87,6 @@ This repo tracks my learning and practical exercises to build Linux system admin
   sudo ufw allow 443/tcp
   sudo ufw enable
   sudo ufw status verbose
+  sudo fail2ban-client status
   ```
 * Saved terminal history in 'firewall-setup.txt'
-
-```
-
-Copy everything at once and paste it into your README.md.  
-If you want help with committing and pushing, just say.
-```
