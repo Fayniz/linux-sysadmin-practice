@@ -1,49 +1,99 @@
-This repo tracks my learning and practical exercises to build Linux system administration skills. The goals are to practice user manangement, services, security hardening, networking and scripting.
+````markdown
+This repo tracks my learning and practical exercises to build Linux system administration skills. The goals are to practice user management, services, security hardening, networking and scripting.
 
 ### Day 1 (14 July)
-- Created a new Linux user 'testuser' using 'adduser'
-- Added the user to the 'sudo' with 'usermod -aG'
-- Saved terminal history to 'adduser-commands.txt'
+- Created a new Linux user 'testuser' using:
+  ```bash
+  sudo adduser testuser
+  sudo usermod -aG sudo testuser
+````
+
+* Saved terminal history to 'adduser-commands.txt'
 
 ### Day 2 (15 July)
-- Manage service using 'systemctl'
-- Checked, stopped, started, disabled, enabled, cron service
-- Saved terminal history to 'service-management.txt'
+
+* Managed services using `systemctl`:
+
+  ```bash
+  systemctl status cron
+  sudo systemctl stop cron
+  sudo systemctl start cron
+  sudo systemctl disable cron
+  sudo systemctl enable cron
+  ```
+* Saved terminal history to 'service-management.txt'
 
 ### Day 3 (16 July)
 
-- Practiced file permission and ownership using 'chmod' and 'chown'
-- Created a test file, changed ownership to 'testuser'
-- Restricted file access to owner only with 'chmod 600'
-- Saved terminal history to 'Permissions.txt'
+* Practiced file permission and ownership:
+
+  ```bash
+  touch file.txt
+  sudo chown testuser file.txt
+  chmod 600 file.txt
+  ```
+* Saved terminal history to 'Permissions.txt'
 
 ### Day 4 (17 July)
 
-- Create bash script file to delete '.tmp' files from '/tmp'
-- Made the script executable using 'chmod +x' 
-- Ran the script succesfully
-- Saved terminal history to 'create-script-file.txt'
+* Created bash script to delete `.tmp` files from `/tmp`:
+
+  ```bash
+  echo -e '#!/bin/bash\nrm -f /tmp/*.tmp' > cleanup.sh
+  chmod +x cleanup.sh
+  ./cleanup.sh
+  ```
+* Saved terminal history to 'create-script-file.txt'
 
 ### Day 5 (18 July)
 
-- Explored disk space using 'df -h' and directory usage 'du -sh'
-- Checked memory status with 'free -h' and understood Linux memory usage
-- Learned the difference between RAM and disk storage
-- Saved terminal history in 'disk-memory.txt'
+* Explored disk and memory usage:
+
+  ```bash
+  df -h
+  du -sh ~
+  free -h
+  ```
+* Saved terminal history in 'disk-memory.txt'
 
 ### Day 6 (19 July)
 
-- Generated RSA SSH key pair with 4096-bit encryption
-- Added public key to ~/.ssh/authorized_keys for passwordless SSH login
-- Disabled root login via SSH for better security
-- Tested SSH key login to localhost with no password prompt
-- Saved terminal history in 'ssh-key-setup.txt' 
+* Generated RSA SSH key pair:
+
+  ```bash
+  ssh-keygen -t rsa -b 4096 -C "fayyadhnizar@gmail.com"
+  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  ```
+* Disabled root SSH login by editing `/etc/ssh/sshd_config`
+* Tested SSH key login to localhost:
+
+  ```bash
+  ssh root@localhost
+  ```
+* Saved terminal history in 'ssh-key-setup.txt'
 
 ### Day 7 (20 July)
 
-- Installed and configured ufw for system security
-- Set default policies to deny all incoming and allow all outgoing traffic
-- Allowed necessary ports: SSH(22), HTTP(80), and HTTPS(443)
-- Enabled firewall and verify status
-- Understand the importance of security
+* Installed UFW:
 
+  ```bash
+  sudo apt install ufw
+  ```
+* Set default policies and allowed ports:
+
+  ```bash
+  sudo ufw default deny incoming
+  sudo ufw default allow outgoing
+  sudo ufw allow ssh
+  sudo ufw allow 80/tcp
+  sudo ufw allow 443/tcp
+  sudo ufw enable
+  sudo ufw status verbose
+  ```
+* Saved terminal history in 'firewall-setup.txt'
+
+```
+
+Copy everything at once and paste it into your README.md.  
+If you want help with committing and pushing, just say.
+```
