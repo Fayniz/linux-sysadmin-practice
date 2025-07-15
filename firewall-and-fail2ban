@@ -1,0 +1,10 @@
+  323  sudo ufw status
+  324  sudo ufw status verbose
+  325  sudo ufw allow OpenSSH
+  326  sudo ufw allow http
+  327  sudo ufw allow https
+  328  sudo ufw status verbose
+  329  sudo ufw status
+  330  sudo apt install fail2ban
+  331  sudo fail2ban-client status
+  332  history | tail -n 20 > "firewall-and-fail2ban"
