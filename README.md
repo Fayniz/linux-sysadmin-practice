@@ -1,6 +1,6 @@
 #Linux Sysadmin Practice
 
-This repo tracks my learning and practical exercises to build Linux system administration skills. The goals is to practice user manangement, services, security hardening, networking and scripting.
+This repo tracks my learning and practical exercises to build Linux system administration skills. The goals are to practice user manangement, services, security hardening, networking and scripting.
 
 ## Day 1 (14 July 2025)
 - Created a new Linux user 'testuser' using 'adduser'
@@ -24,5 +24,5 @@ This repo tracks my learning and practical exercises to build Linux system admin
 
 - Create script file to delete temporary files
 - Terminal output messages of deletion
-- Saved command history to create-script-file.txt
+- Saved command history to 'create-script-file.txt'
 
