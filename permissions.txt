@@ -1,0 +1,9 @@
+  342  sudo chown testuser file.txt
+  343  nano file.txt
+  344  ls -l
+  345  chmod 600 file.txt
+  346  sudo chmod 600 file.txt
+  347  ls -l
+  348  nano file.txt 
+  349  cd ~/repos/linux-sysadmin-practice/
+  350  history | tail -n 20 > permissions.txt

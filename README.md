@@ -13,3 +13,11 @@ This repo tracks my learning and practical exercises to build Linux system admin
 - Checked, stopped, started, disabled, enabled, cron service
 - Saved terminal command history to 'service-management.txt'
 
+## Day 3 (16 July 2025)
+
+- Practiced file permission and ownership using 'chmod' and 'chown'
+- Created a test file, changed ownership to 'testuser'
+- Restricted file access to owner only with 'chmod 600'
+- Saved command history to 'Permissions.txt'
+
+

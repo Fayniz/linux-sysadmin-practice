@@ -1,14 +1,3 @@
-  288  cd
-  289  cd repo
-  290  ls
-  291  cd repos
-  292  ls
-  293  mkdir linux-sysadmin-practice
-  294  cd linux-sysadmin-practice/
-  295  echo "# Linux Sysadmin Practice
-  296  ls
-  297  "# Linux Sysadmin Practice. Track learning and practical exercise to build Linux System administration Skills. To practice user management, services, security hardening, networking and scripting." > README.md
-  298  ls
   299  systemctl list-units --type=service --all
   300  systemctl status cron
   301  sudo systemctl stop cron
