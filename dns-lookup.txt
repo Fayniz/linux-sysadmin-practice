@@ -1,0 +1,38 @@
+# DNS Lookup Practice
+
+## dig google.com
+
+This queries DNS to find the IP address for google.com.
+
+Output explained:
+
+- You're using dig to look up google.com.
+- Query type: A record (IPv4 address).
+- Status: NOERROR = successful query.
+- Answer: IP address is 142.250.66.206
+- Server used: 127.0.0.53 (local DNS stub resolver)
+
+## dig +short google.com
+
+Gives only the IP:
+142.250.66.206
+
+## dig google.com MX
+
+Queries for Mail Exchange (MX) records:
+- smtp.google.com handles email for google.com
+- Priority: 10 (lower is higher priority)
+
+## nslookup google.com
+
+Resolves domain to IP addresses:
+- IPv4: 142.250.66.206
+- IPv6: 2404:6800:4006:814::200e
+
+## nslookup -type=NS google.com
+
+Shows the authoritative nameservers:
+- ns1.google.com
+- ns2.google.com
+- ns3.google.com
+- ns4.google.com
