@@ -1,0 +1,5 @@
+  403  sudo apt install apache2
+  404  sudo systemctl enable apache2
+  405  sudo systemctl start apache2
+  406  sudo systemctl status apache2
+  407  history | tail -n 10 > Apache-web-server-setup.txt

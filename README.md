@@ -66,3 +66,8 @@ This repo tracks my learning and practical exercises to build Linux system admin
 * Learned difference between A, MX and NS record type
 * Saved terminal output in 'dns-lookup.txt'
 
+### Web server setup (Apache)
+* Installed Apache
+* Located the default web root /var/www/html
+* Verified local web server is running: opened `http://localhost`
+* Saved terminal history in 'Apache-web-server-setup.txt'
