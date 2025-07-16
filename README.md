@@ -56,3 +56,13 @@ This repo tracks my learning and practical exercises to build Linux system admin
 * Routing checked with `ip r`
 * Understood default route and local subnet
 * Saved terminal output in 'ip-routing.txt'
+
+### DNS Queries and Domain Lookup
+
+* Practiced using `dig` to query A and MX records for domains
+* Used `dig +shorts` to get clean IP output
+* Queried authoritative nameservers with `nslookup -type=NS`
+* Observed response secitons, query time and DNS server used
+* Learned difference between A, MX and NS record type
+* Saved terminal output in 'dns-lookup.txt'
+
