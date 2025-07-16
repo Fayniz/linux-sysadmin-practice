@@ -1,0 +1,8 @@
+cd ~/repos/linux-sysadmin-practice
+sudo mkdir -p /var/www/fayyadh.test
+sudo chown -R $USER:$USER /var/www/fayyadh.test
+mv index.html /var/www/fayyadh.test/index.html
+sudo nano /etc/apache2/sites-available/fayyadh.test.conf
+sudo a2ensite fayyadh.test.conf
+sudo systemctl reload apache2
+sudo nano /etc/hosts

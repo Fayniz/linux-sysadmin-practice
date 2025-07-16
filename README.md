@@ -71,3 +71,14 @@ This repo tracks my learning and practical exercises to build Linux system admin
 * Located the default web root /var/www/html
 * Verified local web server is running: opened `http://localhost`
 * Saved terminal history in 'Apache-web-server-setup.txt'
+
+### Virtual Host Setup with Apache
+
+* Created a new directory `/var/www/fayyadh.test` to host a custom website
+* Used `chown` to give current user permission to manage the directory
+* Moved a sample `index.html` file into the site folder
+* Created a virtual host config file in `/etc/apache2/sites-available/fayyadh.test.conf`
+* Enabled the site using `a2ensite` and reloaded Apache to apply the changes
+* Edited `/etc/hosts` to resolve `fayyadh.test` to `127.0.0.1`
+* Verified that the custom web page loads successfully at `http://fayyadh.test`
+* Saved terminal history at 'virtual-host.txt'
