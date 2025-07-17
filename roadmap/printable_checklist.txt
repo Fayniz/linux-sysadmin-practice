@@ -1,0 +1,34 @@
+
+FAYYADH'S LINUX + HOMELAB ROADMAP (PRINTABLE CHECKLIST)
+=========================================================
+
+[✔] Stage 1 - Foundation (Completed)
+
+[ ] Stage 2 - Homelab + Intermediate Admin
+    [ ] Headless server setup
+    [ ] Static IP config
+    [ ] SSH access and dotfiles
+    [ ] Cron + at + anacron mastery
+    [ ] Backup scripts (rsync, tar)
+    [ ] Logging via logrotate/journalctl
+    [ ] Docker container setup
+    [ ] KVM/QEMU VM setup
+
+[ ] Stage 3 - Infra Services + Security
+    [ ] DNS server (bind9/dnsmasq)
+    [ ] DHCP server
+    [ ] WireGuard/OpenVPN setup
+    [ ] LDAP auth setup
+    [ ] AppArmor/SELinux
+    [ ] PKI / SSL certs
+    [ ] Monitoring via Prometheus & Grafana
+
+[ ] Stage 4 - Automation & Cloud
+    [ ] Ansible provisioning
+    [ ] AWS EC2 setup + S3 backup
+    [ ] Cloud-init automation
+
+[ ] Stage 5 - Portfolio & Projects
+    [ ] Create GitHub repo structure
+    [ ] Write README with diagrams
+    [ ] Performance tuning practice
